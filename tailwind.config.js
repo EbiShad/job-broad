@@ -6,6 +6,18 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme:{
+
+    container:{
+      center:true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '3rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+    },
+
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -13,6 +25,13 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+
+    screens:{
+      "sm":"576px",
+      "md":"768px",
+      "lg":"992px",
+      "xl":"1200px"
+    }
   },
   plugins: [],
 };

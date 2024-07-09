@@ -1,13 +1,17 @@
+import Footer from "./Footer"
+import Header from "./Header"
 
 
 
 
-function layout({children}) {
+function Layout({children}) {
   return (
-    <div>
+    <>
+    <Header/>
       {children}
-    </div>
+     <Footer/> 
+    </>
   )
 }
 
-export default layout
+export default Layout

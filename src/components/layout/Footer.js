@@ -5,9 +5,9 @@
 function Footer() {
   return (
     <div>
-      Footer
+      Footernsfnf
     </div>
   )
 }
 
-export default footer
+export default Footer

@@ -1,8 +1,9 @@
-import { Inter } from "next/font/google";
-import Link from "next/link";
 
+import Layout from "@/components/layout/Layout";
+import localFont from 'next/font/local'
+import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] });
+const PoetsenOneFont = localFont({src:"../../public/fonts/PoetsenOne-Regular.ttf" });
 
 export const metadata = {
   title: "Create Next App",
@@ -12,10 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <header>
-      <Link href="/">Job Board</Link>
-    </header>
-      <body className={inter.className}>{children}</body>
+      <body className={PoetsenOneFont.className}>
+        <Layout>{children}</Layout>
+      </body>
     </html>
   );
 }
