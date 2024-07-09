@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="py-12">
+    <section className="py-12 container">
       <h1 className="text-center font-bold text-4xl">
         find your next dream job
       </h1>

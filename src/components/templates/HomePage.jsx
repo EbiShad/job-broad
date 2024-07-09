@@ -1,10 +1,12 @@
 import Hero from "./Hero"
+import Jobs from "./Jobs"
 
 
 function HomePage() {
   return (
-    <div className="xl:w-[1200px] w-full container">
+    <div>
       <Hero/>
+      <Jobs/>
     </div>
   )
 }
