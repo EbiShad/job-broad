@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
       <div className="flex justify-between items-center py-4 px-4 border-b">
-        <Link href={"/"} className="text-[32px] font-bold">
+        <Link href={"/"} className="text-[32px] font-bold  text-purple-700">
           Job Board
         </Link>
         <nav className="flex gap-2 *:bg-purple-300 *:px-4 *:py-2 *:rounded">

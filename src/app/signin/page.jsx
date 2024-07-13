@@ -1,3 +1,4 @@
+import SigninPage from "@/components/templates/SigninPage"
 
 
 
@@ -5,7 +6,7 @@
 function SignIn() {
   return (
     <div>
-      SignIn
+      <SigninPage/>
     </div>
   )
 }

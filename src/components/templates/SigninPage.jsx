@@ -1,19 +1,18 @@
-"use client";
-
-
+'use client'
 
 import TextField from "@/Ui/TextField";
 import Link from "next/link";
 import { useState } from "react";
 
-function SignupPage() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+function SigninPage() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
 
   return (
     <div className="mx-auto sm:w-1/2 lg:w-1/3 my-20 p-10 border border-purple-300 rounded-lg">
       <h4 className="font-bold text-center mb-16 text-[54px] text-purple-700">
-        Sign up
+        login
       </h4>
       <form className="space-y-5">
         <TextField
@@ -33,15 +32,20 @@ function SignupPage() {
           placeholder="enter your password"
         />
         <button className="bg-purple-300  text-gray-900 text-lg rounded-lg transition ease-in-out delay-75  hover:bg-purple-400  w-full py-3">
-          Sign Up
+          login
         </button>
       </form>
       <p className="text-sm text-center mt-10">
-        Do you have account?
-        <Link href="/signin" className="text-purple-400 pl-1 hover:text-purple-600 transition ease-in-out delay-50">login</Link>
+       You dont have account?
+        <Link
+          href="/signup"
+          className="text-purple-400 pl-1 hover:text-purple-600 transition ease-in-out delay-50"
+        >
+          signup
+        </Link>
       </p>
     </div>
   );
 }
 
-export default SignupPage;
+export default SigninPage;

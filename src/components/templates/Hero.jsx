@@ -4,7 +4,7 @@ function Hero() {
       <h1 className="text-center font-bold text-4xl">
         find your next dream job
       </h1>
-      <p className="text-center text-gray-700 pt-3 text-xl">
+      <p className="text-center text-gray-700 pt-3 text-xl ">
         Participatory Communication and Free Flow of Information and Knowledge
         has been advanced largely through use of the Internet by civil society
         corresponding to paragraph 6 in the 1999 Programme of Action calling the

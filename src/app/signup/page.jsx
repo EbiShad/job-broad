@@ -1,11 +1,13 @@
+import SignupPage from "@/components/templates/SignupPage"
 
 
-import React from 'react'
+
 
 function SignUp() {
+
   return (
-    <div>
-      SignUp
+    <div >
+      <SignupPage/>
     </div>
   )
 }
