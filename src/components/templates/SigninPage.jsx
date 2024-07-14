@@ -1,8 +1,8 @@
 'use client'
 
-import TextField from "@/Ui/TextField";
 import Link from "next/link";
 import { useState } from "react";
+import TextField from "../module/TextField";
 
 function SigninPage() {
     const [email, setEmail] = useState("");
@@ -41,7 +41,7 @@ function SigninPage() {
           href="/signup"
           className="text-purple-400 pl-1 hover:text-purple-600 transition ease-in-out delay-50"
         >
-          signup
+          Create an account
         </Link>
       </p>
     </div>

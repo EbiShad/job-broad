@@ -1,9 +1,12 @@
-
 import Layout from "@/components/layout/Layout";
-import localFont from 'next/font/local'
-import "./globals.css"
+import localFont from "next/font/local";
+import "./globals.css";
+import { Toaster } from "react-hot-toast";
+import ReactQueryProvider from "@/utils/providers/ReactQueryProvider";
 
-const PoetsenOneFont = localFont({src:"../../public/fonts/PoetsenOne-Regular.ttf" });
+const PoetsenOneFont = localFont({
+  src: "../../public/fonts/PoetsenOne-Regular.ttf",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -14,7 +17,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={PoetsenOneFont.className}>
-        <Layout>{children}</Layout>
+        <Toaster />
+        <ReactQueryProvider>
+          <Layout>{children}</Layout>
+        </ReactQueryProvider>
       </body>
     </html>
   );

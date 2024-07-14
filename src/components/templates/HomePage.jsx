@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast"
 import Hero from "./Hero"
 import Jobs from "./Jobs"
 
@@ -7,6 +8,7 @@ function HomePage() {
     <div>
       <Hero/>
       <Jobs/>
+      
     </div>
   )
 }
